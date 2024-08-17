@@ -1,0 +1,198 @@
+:root {
+    --counter-yellow-light: #fcd612;
+    --counter-yellow-primary: #f9c31a;
+    --counter-yellow-dark: #f8b71d;
+    --counter-red-accent: #d61a1f;
+    --counter-black-primary: #000000;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    font-family: "Poppins", system-ui, -apple-system, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.5;
+}
+
+body {
+    min-height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--counter-yellow-light);
+    animation: fadeIn 1s ease;
+}
+
+img {
+    height: auto;
+    max-width: 100%;
+}
+
+.counter__container {
+    width: 100%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.8rem;
+}
+
+.counter__image {
+    max-width: 50vw;
+    background-color:var(--counter-yellow-dark);
+    padding: 1.5rem;
+}
+
+.counter__result p {
+    font-size: 6rem;
+    font-weight: 700;
+}
+
+.counter__btns {
+    min-width: 100% ;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.counter__btn-increase,
+.counter__btn-decrease {
+    min-width: 25%;
+    padding: 1rem;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    font-family: inherit;
+    background-color: var(--counter-yellow-dark);
+    border: 4px solid var(--counter-black-primary);
+    box-shadow:
+    1px 1px 0 var(--counter-black-primary), 
+    2px 2px 0 var(--counter-black-primary),
+    3px 3px 0 var(--counter-black-primary),
+    4px 4px 0 var(--counter-black-primary),
+    5px 5px 0 var(--counter-black-primary),
+    6px 6px 0 var(--counter-black-primary),
+    7px 7px 0 var(--counter-black-primary),
+    8px 8px 0 var(--counter-black-primary);
+    transition: .3s ease-in;
+}
+
+
+.counter__btn-reset {
+    min-width: 25%;
+    padding: 1rem;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    font-family: inherit;
+    color: var(--counter-yellow-light);
+    background-color: var(--counter-red-accent);
+    border: 4px solid var(--counter-black-primary);
+    box-shadow:
+    1px 1px 0 var(--counter-black-primary), 
+    2px 2px 0 var(--counter-black-primary),
+    3px 3px 0 var(--counter-black-primary),
+    4px 4px 0 var(--counter-black-primary),
+    5px 5px 0 var(--counter-black-primary),
+    6px 6px 0 var(--counter-black-primary),
+    7px 7px 0 var(--counter-black-primary),
+    8px 8px 0 var(--counter-black-primary);
+    transition: .3s ease-in;
+}
+
+.footer {
+    padding: .8rem;
+    font-size: 0.875rem;
+    text-align: center;
+    color: #fff;
+    background-color: var(--counter-black-primary);
+}
+
+.footer__user {
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--counter-yellow-light);
+    transition: .3s ease-in;
+
+}
+.footer__movie {
+    font-weight: 800;
+    text-decoration: none;
+    color: var(--counter-red-accent);
+    transition: .3s ease-in;
+}
+
+.counter__btn-increase:hover,
+.counter__btn-decrease:hover { 
+    background-color:  var(--counter-yellow-light);
+    transition: .2s ease-in-out;
+}
+
+.counter__btn-reset:hover {
+    background-color: var(--counter-yellow-dark);
+    color: var(--counter-black-primary);
+    transition: .2s ease-in-out;
+}
+
+.footer__user:hover {
+    color: var(--counter-red-accent);
+    transition: .2s ease-in-out;
+}
+
+.footer__movie:hover {
+    color: var(--counter-yellow-primary);
+    background-color: var(--counter-red-accent);
+    text-shadow:
+    1px 1px 0 var(--counter-black-primary),
+    1.2px 1.2px 0 var(--counter-black-primary);
+    transition: .2s ease-in-out;
+}
+
+@media (max-width: 767px) {
+    .counter__container {
+        margin: 1rem 0 3rem 0;
+    }
+    
+    .counter__image {
+        max-width: 85%;
+        padding: 1rem;
+    }
+
+    .counter__btn-increase,
+    .counter__btn-decrease,
+    .counter__btn-reset {
+        width: 80%;
+        padding: .7rem;
+        font-size: 14px;
+    }
+
+    footer {
+        font-size: 12px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .counter__image {
+        max-width: 60%;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+      }
+    100% {
+        opacity: 1;
+      }
+}

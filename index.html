@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Counter page inspired by Kill Bill">
+    <link rel="shortcut icon" href="./src/assets/favicon/katana.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./src/style.css">
+    <title>Counter</title>
+</head>
+<body>
+    <main class="counter__container">
+        <picture class="counter__image">
+            <img src="./src/assets/img/counter.png" alt="Counter image inspired by Kill Bill">
+        </picture>
+        <div class="counter__result">
+            <p aria-live="polite">0</p>
+        </div>
+        <div class="counter__btns">
+            <button class="counter__btn-increase" aria-label="Increase counter">Increase</button>
+            <button class="counter__btn-decrease" aria-label="Decrease counter">Decrease</button>
+            <button class="counter__btn-reset" aria-label="Reset counter">RESET</button>
+        </div>
+    </main>
+    <footer class="footer">
+        <p>Made with love by <a class="footer__user" href="https://github.com/joelccasane" target="_blank" rel="noopener noreferrer">Joel Ccasane</a> inspirated by <a class="footer__movie" href="https://www.imdb.com/title/tt0266697/" target="_blank" rel="noopener noreferrer">KILL BILL</a></p>
+    </footer>
+    <script src="./src/app.js"></script>
+</body>
+</html>
