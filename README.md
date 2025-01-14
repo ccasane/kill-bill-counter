@@ -17,3 +17,5 @@ Un contador simple y bonito inspirado en la película **KILL BILL** dirigida por
 - **Disminuir**: Botón para disminuir el contador.
 - **Restablecer**: Botón para restablecer el contador a cero.
 - **Diseño Temático**: Inspirado en el estilo visual de *Kill Bill*.
+
+🌐 Hecha un vistazo [aquí](https://ccasane.github.io/kill-bill-counter/).
